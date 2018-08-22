@@ -8,155 +8,75 @@ namespace CPL
 {
     class Program
     {
-        static int QuickSort(int[] arr, int wall, int pivot)
+        static int count = 0;
+        static int Partition(ref int[] arr, int start, int end)
         {
-            // temp is used for position swaps, left stores the position to the left of the partition, right store the position to the right of the partition (temp wall)
-            // pivot starts at the end of the array and shifts left by one through each iteration until pivot is equal to the walls starting position, 0
-            int temp = 0;
-            int left = -1;
-            int right = 0;
+            int pIndex = start;
+            int pivot = arr[end];
+            Console.WriteLine("Start of partition: start = {0}, end = {1}, pIndex = {2}, pivot = {3}", start, end, pIndex, pivot);
 
-            while (wall < pivot)   // when the pivot position is less than right position, we need to move the temporary wall (right) one to the right and retest
+            for (int i = start; i < end; i++)
             {
-                //Console.WriteLine("working");   //debugging
-                if (arr[pivot] <= arr[right])
+                if (pivot >= arr[i])
                 {
-                    right++;
-                    //foreach (int i in arr)
-                    //{
-                    //    Console.Write(i + " ");    //debugging
-                    //}
-                    //Console.WriteLine();
+                    Console.WriteLine("Inside the for loop, swap call, i = {0}, pIndex = {1}", i, pIndex);
+                    Swap(ref arr[i], ref arr[pIndex]);
+                    pIndex++;
                 }
-
-                if (arr[pivot] >= arr[right])       // when the pivot position is greater than the right position, we swap the smaller number to the walls starting 
-                {                                   // position and move wall one space to the right. The temporary wall (right) always starts in the same position
-                    temp = arr[right];              // as wall. Additionally, left moves one to the right to accomodate the new number added to the left side
-                    arr[right] = arr[wall];         // of the partition
-                    arr[wall] = temp;
-                    left++;
-                    wall++;
-                    right = wall;
-                    //foreach (int i in arr)
-                    //{
-                    //    Console.Write(i + " ");     //debugging
-                    //}
-                    //Console.WriteLine();
+                for (int p = 0; p <= end; p++)
+                {
+                    Console.Write(arr[p] + " ");
                 }
-                if (right == pivot)
-                {                                   // when the temporary wall (right) makes it all the way to the pivot, we know that were no number in the array 
-                    temp = arr[right];              // that were greater than pivot. In this case, the pivot number needs to be moved to the left side of the wall
-                    arr[right] = arr[wall];
-                    arr[wall] = temp;
-                    left++;
-                    wall++;
-                    right = wall;
-                    //foreach (int i in arr)
-                    //{
-                    //    Console.Write(i + " ");      //debugging
-                    //}
-                    //Console.WriteLine();
-                }
+                Console.WriteLine("");
             }
-            return pivot;
+            Console.WriteLine("Values before Swap Call: end = {0}, pIndex = {1}", end, pIndex);
+            Swap(ref arr[end], ref arr[pIndex]);
+            count++;
+            return pIndex;
+
         }
 
-        static void RecursiveQuickSort(int[] arr, int wall, int pivot)
+        static void Swap(ref int a, ref int b)
         {
-            // temp is used for position swaps, left stores the position to the left of the partition, right store the position to the right of the partition (temp wall)
-            // pivot starts at the end of the array and shifts left by one through each iteration until pivot is equal to the walls starting position, 0
             int temp = 0;
-            int left = -1;
-            int right = 0;
-
-            while (wall < pivot)   // when the pivot position is less than right position, we need to move the temporary wall (right) one to the right and retest
-            {
-                //Console.WriteLine("working");   //debugging
-                if (arr[pivot] <= arr[right])
-                {
-                    right++;
-                    //foreach (int i in arr)
-                    //{
-                    //    Console.Write(i + " ");    //debugging
-                    //}
-                    //Console.WriteLine();
-                }
-
-                if (arr[pivot] >= arr[right])       // when the pivot position is greater than the right position, we swap the smaller number to the walls starting 
-                {                                   // position and move wall one space to the right. The temporary wall (right) always starts in the same position
-                    temp = arr[right];              // as wall. Additionally, left moves one to the right to accomodate the new number added to the left side
-                    arr[right] = arr[wall];         // of the partition
-                    arr[wall] = temp;
-                    left++;
-                    wall++;
-                    right = wall;
-                    //foreach (int i in arr)
-                    //{
-                    //    Console.Write(i + " ");     //debugging
-                    //}
-                    //Console.WriteLine();
-                }
-                if (right == pivot)
-                {                                   // when the temporary wall (right) makes it all the way to the pivot, we know that were no number in the array 
-                    temp = arr[right];              // that were greater than pivot. In this case, the pivot number needs to be moved to the left side of the wall
-                    arr[right] = arr[wall];
-                    arr[wall] = temp;
-                    left++;
-                    wall++;
-                    right = wall;
-                    //foreach (int i in arr)
-                    //{
-                    //    Console.Write(i + " ");      //debugging
-                    //}
-                    //Console.WriteLine();
-                }
-            }
-            if (pivot != 0) { RecursiveQuickSort(arr, 0, (pivot - 1)); }
-            else { return; }
+            temp = a;
+            a = b;
+            b = temp;
+            Console.WriteLine(a + " " + b);
         }
 
+        static void QuickSort(ref int[] arr, int start, int end)
+        {
+
+            int pIndex = Partition(ref arr, start, end);
+            Console.WriteLine("After {0} partition", count);
+            foreach (int n in arr)
+            {
+                Console.Write(n + " ");
+            }
+            Console.WriteLine();
+
+            if (start < end)
+            {
+                Console.WriteLine("start: {0}, end: {1}", start, end);
+                Partition(ref arr, start, pIndex - 1);
+                Partition(ref arr, pIndex + 1, end);
+            }
+
+        }
 
         static void Main(string[] args)
         {
-            // pi seemed like a great number to use to test this. Console.WriteLine makes this take too long. Use a smaller number to see what's going on. 
-            int[] arr = { 3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8,4,6,2,6,4,3,3,8,3,2,7,9,5,0,2,8,8,4,1,9,7,1,6,9,3,9,9,3,7,5,1,0,5,8,2,0,9,7,4,9,4,4,5,9,2,3,0,
-                7,8,1,6,4,0,6,2,8,6,2,0,8,9,9,8,6,2,8,0,3,4,8,2,5,3,4,2,1,1,7,0,6,7,9,8,2,1,4,8,0,8,6,5,1,3,2,8,2,3,0,6,6,4,7,0,9,3,8,4,4,6,0,9,5,5,0,5,8,2,2,
-                3,1,7,2,5,3,5,9,4,0,8,1,2,8,4,8,1,1,1,7,4,5,0,2,8,4,1,0,2,7,0};
-            int[] arr2 = { 3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8,4,6,2,6,4,3,3,8,3,2,7,9,5,0,2,8,8,4,1,9,7,1,6,9,3,9,9,3,7,5,1,0,5,8,2,0,9,7,4,9,4,4,5,9,2,3,0,
-                7,8,1,6,4,0,6,2,8,6,2,0,8,9,9,8,6,2,8,0,3,4,8,2,5,3,4,2,1,1,7,0,6,7,9,8,2,1,4,8,0,8,6,5,1,3,2,8,2,3,0,6,6,4,7,0,9,3,8,4,4,6,0,9,5,5,0,5,8,2,2,
-                3,1,7,2,5,3,5,9,4,0,8,1,2,8,4,8,1,1,1,7,4,5,0,2,8,4,1,0,2,7,0};
+            int[] arr = { 3, 1, 4, 1, 5, 9 };
 
-            int pivot = arr.Length - 1;
-            int wall = 0;
+            QuickSort(ref arr, 0, arr.Length - 1);
 
-            while (pivot > 0)
-            {
-                QuickSort(arr, wall, pivot);
-                pivot--;
-            }
-
-            pivot = arr2.Length - 1;                 // setting pivot for RecursiveQuickSort and arr2 (assuming it's different and both are being run)
-            RecursiveQuickSort(arr2, wall, pivot);   // I wrote the iterative quicksort first. I feel like the recusion of this function doesn't add anything
-                                                     // because I started at one end. However, if I had started with the median value or a random index around 
-                                                     // the middle of the array, it would have made a big difference. As it is, this is just a recursion of an 
-                                                     // iterative function.
             foreach (int i in arr)
             {
                 Console.Write(i + " ");
             }
 
-            Console.WriteLine("\n");
-
-            foreach (int i in arr2)
-            {
-                Console.Write(i + " ");
-            }
-
             Console.WriteLine("\nComplete");
-
-            int a = 3;
-            bool tf = false;
-
 
         }
 
