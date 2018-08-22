@@ -8,9 +8,10 @@ namespace CPL
 {
     class Program
     {
-        static int count = 0;
+        static int count = 1;
         static int Partition(ref int[] arr, int start, int end)
         {
+            Console.WriteLine("Start Partition\n");
             int pIndex = start;
             int pivot = arr[end];
             Console.WriteLine("Start of partition: start = {0}, end = {1}, pIndex = {2}, pivot = {3}", start, end, pIndex, pivot);
@@ -30,14 +31,17 @@ namespace CPL
                 Console.WriteLine("");
             }
             Console.WriteLine("Values before Swap Call: end = {0}, pIndex = {1}", end, pIndex);
+
             Swap(ref arr[end], ref arr[pIndex]);
+            Console.WriteLine("Count: {0}", count);
             count++;
             return pIndex;
 
         }
-
+         
         static void Swap(ref int a, ref int b)
         {
+            Console.WriteLine("Start Swap\n");
             int temp = 0;
             temp = a;
             a = b;
@@ -47,8 +51,10 @@ namespace CPL
 
         static void QuickSort(ref int[] arr, int start, int end)
         {
+            Console.WriteLine("Start QuickSort\n");
 
             int pIndex = Partition(ref arr, start, end);
+            Console.WriteLine("pIndex = " + pIndex);
             Console.WriteLine("After {0} partition", count);
             foreach (int n in arr)
             {
@@ -58,8 +64,9 @@ namespace CPL
 
             if (start < end)
             {
-                Console.WriteLine("start: {0}, end: {1}", start, end);
+                Console.WriteLine("First recursive call start: {0}, end: {1}", start, end);
                 Partition(ref arr, start, pIndex - 1);
+                Console.WriteLine("Second recursive call start: {0}, end: {1}", start, end);
                 Partition(ref arr, pIndex + 1, end);
             }
 
