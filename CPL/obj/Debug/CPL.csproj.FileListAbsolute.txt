@@ -1,0 +1,7 @@
+C:\Users\fortyseven05\source\repos\CPL\CPL\bin\Debug\CPL.exe.config
+C:\Users\fortyseven05\source\repos\CPL\CPL\bin\Debug\CPL.exe
+C:\Users\fortyseven05\source\repos\CPL\CPL\bin\Debug\CPL.pdb
+C:\Users\fortyseven05\source\repos\CPL\CPL\obj\Debug\CPL.csprojResolveAssemblyReference.cache
+C:\Users\fortyseven05\source\repos\CPL\CPL\obj\Debug\CPL.csproj.CoreCompileInputs.cache
+C:\Users\fortyseven05\source\repos\CPL\CPL\obj\Debug\CPL.exe
+C:\Users\fortyseven05\source\repos\CPL\CPL\obj\Debug\CPL.pdb
