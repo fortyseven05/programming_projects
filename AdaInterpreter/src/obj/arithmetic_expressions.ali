@@ -1,0 +1,93 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.14.0
+A -fPIC
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U arithmetic_expressions%b  arithmetic_expressions.adb  2d5995f8 NE OO PK IL
+Z interfaces%s		interfac.ads		interfac.ali
+W memory%s		memory.adb		memory.ali
+Z system.exp_int%s	s-expint.adb		s-expint.ali
+
+U arithmetic_expressions%s  arithmetic_expressions.ads  069e4e0c EE NE OO PK IL
+W ids%s			ids.adb			ids.ali
+W tokens%s		tokens.adb		tokens.ali
+
+D ada.ads		20180524051735 76789da1 ada%s
+D a-unccon.ads		20180524051736 0e9b276f ada.unchecked_conversion%s
+D arithmetic_expressions.ads  20181108203938 e9469ebe arithmetic_expressions%s
+D arithmetic_expressions.adb  20181130025336 3eb223b5 arithmetic_expressions%b
+D ids.ads		20181108203938 8954e40a ids%s
+D interfac.ads		20180524051734 5ab55268 interfaces%s
+D memory.ads		20181108203938 faad28f3 memory%s
+D system.ads		20180524051735 085b6ffb system%s
+D s-exctab.ads		20180524051736 54135002 system.exception_table%s
+D s-expint.ads		20180524051736 192336fc system.exp_int%s
+D s-stalib.ads		20180524051736 09bd3940 system.standard_library%s
+D tokens.ads		20181202015630 668c34b8 tokens%s
+X 3 arithmetic_expressions.ads
+4K9*arithmetic_expressions 26E9 38l5 38e27 4|4b14 86l5 86t27
+6E9*expr_type 6e55 8r38 26r38
+6n23*ID_EXPR{6E9} 28r15 4|14r41 54r15
+6n32*LIT_INT_EXPR{6E9} 23r95 30r15 4|26r42 56r15
+6n46*BIN_EXPR{6E9} 32r15 4|39r41 58r15
+8R9*arithmetic_expression 8d32 10r52 21r32 23r33 26c9 37e14 4|14r19 26r19
+. 39r19 50r32 81r33
+8e32 expr{6E9} 23r88 26r32 27r12 4|53r17
+10P9*arithmetic_expression_access(8R9) 14r38 16r45 18r65 19r13 34r20 35r21
+. 4|10r38 11r13 23r45 24r14 35r67 36r27 37r13
+12E9*arithmetic_operator 12e92 18r26 33r17 4|35r27
+12n33*ADD_OP{12E9} 33r40 4|60r21
+12n41*SUB_OP{12E9} 4|62r21
+12n49*MUL_OP{12E9} 4|64r21
+12n57*REV_DIV_OP{12E9} 4|72r21
+12n69*DIV_OP{12E9} 4|66r21
+12n77*MOD_OP{12E9} 4|68r21
+12n85*EXP_OP{12E9} 4|70r21
+14V13*make{10P9} 14>19 4|10b13 17l8 17t12
+14r19 var{5|5R9} 4|10b19 15r23
+16V13*make{10P9} 16>19 4|23b13 29l8 29t12
+16i19 value{integer} 4|23b19 27r25
+18V13*make{10P9} 18>19 18>47 18>54 4|35b13 44l8 44t12
+18e19 op{12E9} 4|35b20 40r18
+18p47 first{10P9} 4|35b49 41r21
+18p54 second{10P9} 4|35b56 42r22
+21V13*evaluate{integer} 21>23 4|50b13 61s29 61s57 63s29 63s57 65s29 65s57
+. 67s29 67s57 69s29 69s59 71s29 71s58 73s29 73s58 77l8 77t16
+21r23 this{8R9} 4|50b23 53r12 55r42 57r23 59r18 61r39 61r67 63r39 63r67 65r39
+. 65r67 67r39 67r67 69r39 69r69 71r39 71r68 73r39 73r68
+23V13*get_value{integer} 23>24 4|81b13 84l8 84t17
+23r24 this{8R9} 23r83 4|81b24 83r14
+29r13*var{5|5R9} 4|15m16 55r47
+31i13*value{integer} 4|27m16 57r28 83r19
+33e13*op{12E9} 4|40m12 59r23
+34p13*first{10P9} 4|41m12 61r44 63r44 65r44 67r44 69r44 71r44 73r73
+35p13*second{10P9} 4|42m12 61r72 63r72 65r72 67r72 69r74 71r73 73r44
+X 4 arithmetic_expressions.adb
+11p7 expr{3|10P9} 14m7 15r7 16r14
+24p7 expr{3|10P9} 26m7 27r7 28r14
+37p7 expr{3|10P9} 39m7 40r7 41r7 42r7 43r14
+51i7 result{integer} 55m13 57m13 61m19 63m19 65m19 67m19 69m19 71m19 73m19
+. 76r14
+X 5 ids.ads
+3K9*ids 3|2w6 2r15 5|16e8
+5R9*id 3|14r27 29r18 4|10r27 5|14e14
+9V13*get_lexeme{12|5R9} 4|55s30
+X 7 memory.ads
+3K9*memory 4|2w6 2r18 7|9e11
+7V13*fetch{integer} 4|55s23
+X 12 tokens.ads
+1K9*tokens 3|1w6 1r18 12|51e11
+

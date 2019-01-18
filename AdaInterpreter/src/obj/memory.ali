@@ -1,0 +1,71 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.14.0
+A -fPIC
+P SS ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U memory%b		memory.adb		ab72da18 OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U memory%s		memory.ads		9c211c4b EE NE OO PK IL
+W tokens%s		tokens.adb		tokens.ali
+
+D ada.ads		20180524051735 76789da1 ada%s
+D a-charac.ads		20180524051735 2d3ec45b ada.characters%s
+D a-chahan.ads		20180524051735 1601a50f ada.characters.handling%s
+D a-except.ads		20180524051735 291912d5 ada.exceptions%s
+D a-unccon.ads		20180524051736 0e9b276f ada.unchecked_conversion%s
+D memory.ads		20181108203938 faad28f3 memory%s
+D memory.adb		20181130034914 47de57e4 memory%b
+D system.ads		20180524051735 085b6ffb system%s
+D s-conca2.ads		20180524051735 02a0d7d0 system.concat_2%s
+D s-exctab.ads		20180524051736 54135002 system.exception_table%s
+D s-parame.ads		20180524051736 48ec542b system.parameters%s
+D s-secsta.ads		20180524051736 20bbe636 system.secondary_stack%s
+D s-stalib.ads		20180524051736 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051736 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051734 005bf670 system.traceback_entries%s
+D tokens.ads		20181202015630 668c34b8 tokens%s
+X 1 ada.ads
+16K9*Ada 20e8 7|3r6 3r35
+X 2 a-charac.ads
+16K13*Characters 18e19 7|3r10 3r39
+X 3 a-chahan.ads
+36K24*Handling 159e28 7|3w21 3r50
+46V13*Is_Letter{boolean} 7|17s14
+47V13*Is_Lower{boolean} 7|20s10
+X 6 memory.ads
+3K9*memory 9l5 9e11 7|5b14 46l5 46t11
+5U14*store 5>21 5>35 7|32b14 35l8 35t13
+5r21 l{16|5R9} 5r75 7|32b21 34r21
+5i35 value{integer} 7|32b35 34r28
+7V13*fetch{integer} 7>20 7|41b13 44l8 44t13
+7r20 l{16|5R9} 7r73 7|41b20 43r28
+X 7 memory.adb
+7a4 mem(integer) 34m7 43r14
+13V13 get_index{natural} 13b13 13>24 26l8 26t17 34s11 43s18
+13r24 l{16|5R9} 14r35
+14e7 ch{character} 17r25 18r40 20r20 21r33 23r33
+15i7 index{natural} 21m10 23m10 25r14
+X 16 tokens.ads
+1K9*tokens 6|1w6 1r18 16|51e11
+3X4*invalid_identifier 7|18r16
+5R9*lexeme 6|5r27 7r26 7|13r30 32r27 41r26 16|49e14
+9V13*is_valid_id{boolean} 6|5s63 7s61
+30V13*to_string{string} 7|14s24
+

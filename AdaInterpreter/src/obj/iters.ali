@@ -1,0 +1,112 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.14.0
+A -fPIC
+P ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U iters%b		iters.adb		375dee29 OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W arithmetic_expressions%s  arithmetic_expressions.adb  arithmetic_expressions.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+
+U iters%s		iters.ads		e66c7b69 EE OO PF PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W arithmetic_expressions%s  arithmetic_expressions.adb  arithmetic_expressions.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20180524051735 76789da1 ada%s
+D a-except.ads		20180524051735 291912d5 ada.exceptions%s
+D a-finali.ads		20180524051736 bf4f806b ada.finalization%s
+D a-stream.ads		20180524051735 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051736 491b781d ada.tags%s
+D a-unccon.ads		20180524051736 0e9b276f ada.unchecked_conversion%s
+D arithmetic_expressions.ads  20181108203938 e9469ebe arithmetic_expressions%s
+D ids.ads		20181108203938 8954e40a ids%s
+D iters.ads		20181127205407 b06565bc iters%s
+D iters.adb		20181130162656 d1319540 iters%b
+D system.ads		20180524051735 085b6ffb system%s
+D s-exctab.ads		20180524051736 54135002 system.exception_table%s
+D s-finmas.ads		20180524051736 7811a767 system.finalization_masters%s
+D s-finroo.ads		20180524051736 4ff27390 system.finalization_root%s
+D s-memory.ads		20180524051735 597d6634 system.memory%s
+D s-parame.ads		20180524051736 48ec542b system.parameters%s
+D s-secsta.ads		20180524051736 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051735 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051736 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051736 09bd3940 system.standard_library%s
+D s-stalib.adb		20180524051734 f2fe2716 system.standard_library%b
+D s-stoele.ads		20180524051736 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20180524051735 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20180524051735 b16154c2 system.storage_pools%s
+D s-stposu.ads		20180524051734 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20180524051734 aedef97e system.stream_attributes%s
+D s-traent.ads		20180524051734 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051735 34867c83 system.unsigned_types%s
+D tokens.ads		20181202015630 668c34b8 tokens%s
+X 1 ada.ads
+16K9*Ada 20e8 9|2r6 2r28 6r21 16r21 10|2r6 2r28
+X 3 a-finali.ads
+40K13*Finalization 68e21 9|2w10 2r32 6r25 16r25 10|2w10 2r32
+43H9*Controlled<14|40R9> 59e72 9|6r38 16r38
+46U14*Initialize<14|44p14>
+47U14*Adjust<14|42p14>
+48U14*Finalize<14|43p14>
+X 7 arithmetic_expressions.ads
+4K9*arithmetic_expressions 38e27 9|1w6 1r34 10|1w6 1r34
+10P9*arithmetic_expression_access(8R9) 9|8r36 10r51 12r49 17r19 18r17 10|6r36
+. 14r51 19r49
+X 9 iters.ads
+4K9*iters 16E9 21l5 21e10 10|4b14 24l5 24t10
+6R9*iter<3|43R9> 3|46P14 47P14 48P14 9|8p13 8r73 10p13 10r38 12p13 12r36
+. 16c9 19e14 10|6r73 7r10 14r38 19r36
+8V13*make{6R9} 8>19 8>26 10|6b13 12l8 12t12
+8p19 expr1{7|10P9} 10|6b19 9r23
+8p26 expr2{7|10P9} 10|6b26 10r21
+10V13*get_start_expr{7|10P9} 10>29 10|14b13 17l8 17t22
+10r29 this{6R9} 10|14b29 16r14
+12V13*get_end_expr{7|10P9} 12>27 10|19b13 22l8 22t20
+12r27 this{6R9} 10|19b27 21r14
+17p7 start_expr{7|10P9} 10|9m9 16r19
+18p7 end_expr{7|10P9} 10|10m9 21r19
+X 10 iters.adb
+7r7 i{9|6R9} 9m7 10m7 11r14
+X 11 system.ads
+67M9*Address
+X 15 s-memory.ads
+53V13*Alloc{11|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{11|67M9} 105i<c,__gnat_realloc>22
+X 21 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+

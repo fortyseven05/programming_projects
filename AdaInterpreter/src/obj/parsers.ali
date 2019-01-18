@@ -1,0 +1,260 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.14.0
+A -fPIC
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U parsers%b		parsers.adb		827070f5 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W arithmetic_expressions%s  arithmetic_expressions.adb  arithmetic_expressions.ali
+W boolean_expressions%s	boolean_expressions.adb	boolean_expressions.ali
+W ids%s			ids.adb			ids.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W iters%s		iters.adb		iters.ali
+W lexical_analyzers%s	lexical_analyzers.adb	lexical_analyzers.ali
+W programs%s		programs.adb		programs.ali
+W statements%s		statements.adb		statements.ali
+Z system%s		system.ads		system.ali
+Z system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.val_enum%s	s-valenu.adb		s-valenu.ali
+Z system.val_int%s	s-valint.adb		s-valint.ali
+W tokens%s		tokens.adb		tokens.ali
+
+U parsers%s		parsers.ads		b7a28402 EE OO PK IL
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W lexical_analyzers%s	lexical_analyzers.adb	lexical_analyzers.ali
+W programs%s		programs.adb		programs.ali
+Z system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20180524051735 76789da1 ada%s
+D a-contai.ads		20180524051734 61e5e089 ada.containers%s
+D a-cdlili.ads		20180524051734 8e06b4f2 ada.containers.doubly_linked_lists%s
+D a-conhel.ads		20180524051735 20298884 ada.containers.helpers%s
+D a-except.ads		20180524051735 291912d5 ada.exceptions%s
+D a-finali.ads		20180524051736 bf4f806b ada.finalization%s
+D a-ioexce.ads		20180524051734 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20180524051735 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20180524051735 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051736 491b781d ada.tags%s
+D a-textio.ads		20180524051736 881db35a ada.text_io%s
+D a-unccon.ads		20180524051736 0e9b276f ada.unchecked_conversion%s
+D arithmetic_expressions.ads  20181108203938 e9469ebe arithmetic_expressions%s
+D boolean_expressions.ads  20181108203938 6198fa17 boolean_expressions%s
+D ids.ads		20181108203938 8954e40a ids%s
+D interfac.ads		20180524051734 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051734 e53d8b8e interfaces.c_streams%s
+D iters.ads		20181127205407 b06565bc iters%s
+D lexical_analyzers.ads	20181202002105 c010304f lexical_analyzers%s
+D parsers.ads		20181127215820 439acd5d parsers%s
+D parsers.adb		20181202062331 2aceb53c parsers%b
+D programs.ads		20181202033441 34287910 programs%s
+D statements.ads	20181130052642 40622336 statements%s
+D system.ads		20180524051735 085b6ffb system%s
+D s-atocou.ads		20180524051736 b45c2d8d system.atomic_counters%s
+D s-crtl.ads		20180524051734 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051736 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051736 078245e4 system.file_control_block%s
+D s-finmas.ads		20180524051736 7811a767 system.finalization_masters%s
+D s-finroo.ads		20180524051736 4ff27390 system.finalization_root%s
+D s-imenne.ads		20180524051735 614c06c0 system.img_enum_new%s
+D s-memory.ads		20180524051735 597d6634 system.memory%s
+D s-parame.ads		20180524051736 48ec542b system.parameters%s
+D s-pooglo.ads		20180524051734 ede33ef8 system.pool_global%s
+D s-secsta.ads		20180524051736 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051735 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051736 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051736 09bd3940 system.standard_library%s
+D s-stalib.adb		20180524051734 f2fe2716 system.standard_library%b
+D s-stoele.ads		20180524051736 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20180524051735 b16154c2 system.storage_pools%s
+D s-stposu.ads		20180524051734 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20180524051734 aedef97e system.stream_attributes%s
+D s-traent.ads		20180524051734 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051735 34867c83 system.unsigned_types%s
+D s-valenu.ads		20180524051736 bb1a4295 system.val_enum%s
+D s-valint.ads		20180524051735 48a52a3f system.val_int%s
+D s-wchcon.ads		20180524051736 1b7d22d2 system.wch_con%s
+D tokens.ads		20181202015630 668c34b8 tokens%s
+X 1 ada.ads
+16K9*Ada 20e8 21|9r6 9r23
+X 8 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[3|69]>
+X 11 a-textio.ads
+49K13*Text_IO 471e16 21|9w10 9r27
+X 13 arithmetic_expressions.ads
+4K9*arithmetic_expressions 38e27 21|7w6 7r34
+10P9*arithmetic_expression_access(8R9) 21|46r36 64r37 65r16 67r25 70r41 132r25
+. 180r22 225r31 256r23
+12E9*arithmetic_operator 12e92 21|71r20 77r24 80r24 83r24 86r24 89r24 92r24
+. 95r24
+14V13*make{10P9} 21|115s21
+16V13*make{10P9} 21|52s17
+18V13*make{10P9} 21|101s20
+X 14 boolean_expressions.ads
+3K9*boolean_expressions 21e24 21|8w6 8r31
+5R9*boolean_expression 19e14 21|131r39 193r23 211r23
+7E9*relational_operator 7e74 21|134r19 140r23 144r23 148r23 152r23 156r23
+. 160r23
+9V13*make{5R9} 21|166s17
+X 15 ids.ads
+3K9*ids 16e8 21|4w6 4r15
+5R9*id 14e14 21|32r15 56r30 237r25 255r25
+7V13*make{5R9} 21|60s17
+X 18 iters.ads
+4K9*iters 21e10 21|5w6 5r17
+6R9*iter<6|43R9> 19e14 21|224r38 238r21
+8V13*make{6R9} 21|231s23
+X 19 lexical_analyzers.ads
+4K9*lexical_analyzers 29e22 20|1w6 1r29 21|1w6 1r29
+6R9*lexical_analyzer 27e14 20|16r12 21|18r13
+10V13*make{6R9} 21|21s16
+12U14*get_next_token 21|49s10 58s10 73s13 136s10 182s16 184s16 187s16 196s16
+. 200s16 203s16 214s16 218s16 228s16 241s16 244s16 248s16 259s16 306s7 309s7
+. 311s7 314s7 316s7
+15V13*get_lookahead_token{49|7R9} 21|106s17 290s17 296s20
+X 20 parsers.ads
+4K9*parsers 15E9 19l5 19e12 21|11b14 322l5 322t12
+6R9*parser 8r55 10r34 15c9 17e14 21|17r55 19r11 30r34
+8V13*make_parser{6R9} 8>26 21|17b13 24l8 24t19
+8a26 file_name{string} 21|17b26 21r22
+10U14*parse 10=21 10<42 21|30b14 320l8 320t13
+10r21 this{6R9} 21|30b21 49m25 49r25 58m25 58r25 73m28 73r28 106r37 136m25
+. 136r25 182m31 182r31 184m31 184r31 187m31 187r31 196m31 196r31 200m31 200r31
+. 203m31 203r31 214m31 214r31 218m31 218r31 228m31 228r31 241m31 241r31 244m31
+. 244r31 248m31 248r31 259m31 259r31 290r37 296r40 306m22 306r22 309m22 309r22
+. 311m22 311r22 314m22 314r22 316m22 316r22
+10r42 prog{22|6R9} 21|30b42 318m7
+12X4*parse_exception 21|41r19 97r22 120r22 162r19 281r22
+16r7*lex{19|6R9} 21|21m9 49m30 58m30 73m33 106r42 136m30 182m36 184m36 187m36
+. 196m36 200m36 203m36 214m36 218m36 228m36 241m36 244m36 248m36 259m36 290r42
+. 296r45 306m27 309m27 311m27 314m27 316m27
+X 21 parsers.adb
+18r7 lex{19|6R9}
+19r7 p{20|6R9} 21m7 22r14
+31r7 tok{49|7R9} 49m35 50r16 51r52 58m35 59r16 60r43 73m38 74r34 76r22 79r22
+. 82r22 85r22 88r22 91r22 94r22 106m10 107r31 136m35 137r31 139r19 143r19
+. 147r19 151r19 155r19 159r19 182m41 183r22 184m41 185r22 187m41 188r22 196m41
+. 197r22 200m41 201r22 203m41 204r22 214m41 215r22 218m41 219r22 228m41 229r22
+. 241m41 242r22 244m41 245r22 248m41 249r22 259m41 260r22 269r34 290m10 291r31
+. 291r89 292r27 292r84 293r27 296m13 306m32 307r13 309m32 310r13 311m32 312r13
+. 314m32 315r13 316m32 317r13
+32r7 id_var{15|5R9} 308m7 318r20
+33r7 bk{23|17R9} 313m7 313r7 318r28
+36U17 match 36b17 36>23 36>38 43l11 43t16 50s10 59s10 76s16 79s16 82s16 85s16
+. 88s16 91s16 94s16 139s13 143s13 147s13 151s13 155s13 159s13 183s16 185s16
+. 188s16 197s16 201s16 204s16 215s16 219s16 229s16 242s16 245s16 249s16 260s16
+. 307s7 310s7 312s7 315s7 317s7
+36r23 tok{49|7R9} 38r28
+36e38 tt{49|11E9} 38r41
+46V16 get_constant{13|10P9} 46b16 53l11 53t23 118s24
+47i10 var{integer} 51m10 52r22
+56V16 get_id{15|5R9} 56b16 61l11 61t17 115s26 243s26 258s26 308s17
+64V16 get_arith_exp{13|10P9} 64b16 99s22 100s22 124l11 124t24 164s19 165s19
+. 186s23 227s25 230s25 261s24
+65p10 expr{13|10P9} 112m13 115m13 118m16 123r17
+66e10 tt{49|11E9} 74m13 75r16 78r19 81r19 84r19 87r19 90r19 93r19 107m10
+. 108r13 108r49 109r12 109r48 110r12 110r48 111r12 114r12 117r16
+67p10 expr1{13|10P9} 99m13 101r31
+67p17 expr2{13|10P9} 100m13 101r38
+70V19 get_binary_exp{13|10P9} 70b19 102l14 102t28 112s21
+71e13 oper{13|12E9} 77m16 80m16 83m16 86m16 89m16 92m16 95m16 101r25
+131V16 get_boolean_exp{14|5R9} 131b16 167l11 167t26 198s24 216s24
+132p10 expr1{13|10P9} 164m10 166r30
+132p17 expr2{13|10P9} 165m10 166r37
+133e10 tt{49|11E9} 137m10 138r13 142r12 146r12 150r12 154r12 158r12
+134e10 rel_op{14|7E9} 140m13 144m13 148m13 152m13 156m13 160m13 166r22
+170V16 get_block{23|17R9} 170b16 199s23 202s23 217s22 247s22 299l11 299t20
+. 313s13
+171r10 bk{23|17R9} 295m27 295r27 298r17
+172p10 stmt{23|13P9} 294m13 295r31
+174V19 get_statement{23|13P9} 174b19 284l14 284t27 294s21
+175p13 stmt{23|13P9} 271m16 273m16 275m16 277m16 279m16 283r20
+176e13 tt{49|11E9} 269m13 270r16 272r19 274r19 276r19 278r19
+179V22 get_print_stmt{23|13P9} 179b22 190l17 190t31 271s24
+180p16 exp{13|10P9} 186m16 189r28
+192V22 get_if_stmt{23|13P9} 192b22 206l17 206t28 273s24
+193r16 bool{14|5R9} 198m16 205r28
+194r16 bk1{23|17R9} 199m16 199r16 205r34
+194r21 bk2{23|17R9} 202m16 202r16 205r39
+210V22 get_while_stmt{23|13P9} 210b22 221l17 221t31 275s24
+211r16 bool{14|5R9} 216m16 220r28
+212r16 bk{23|17R9} 217m16 217r16 220r34
+224V22 get_iter{18|6R9} 224b22 232l17 232t25 246s22
+225p16 expr1{13|10P9} 227m16 231r28
+225p23 expr2{13|10P9} 230m16 231r35
+236V22 get_for_stmt{23|13P9} 236b22 251l17 251t29 277s24
+237r16 id_var{15|5R9} 243m16 250r28
+238r16 it{18|6R9} 246m16 250r36
+239r16 bk{23|17R9} 247m16 247r16 250r40
+254V22 get_assnmnt_stmt{23|13P9} 254b22 263l17 263t33 279s24
+255r16 id_var{15|5R9} 258m16 262r28
+256p16 expr{13|10P9} 261m16 262r36
+X 22 programs.ads
+4K9*programs 20|2w6 2r20 21|2w6 2r20 22|18e13
+6R9*program 20|10r52 21|30r52 22|16e14
+8V13*make{6R9} 21|318s15
+X 23 statements.ads
+7K9*statements 21|6w6 6r22 23|61e15
+13P9*statement_access(11R9) 21|172r16 174r40 175r19 179r44 192r41 210r44
+. 236r42 254r46
+17R9*block 21|33r12 170r33 171r14 194r27 212r21 239r21 23|59e17
+19U14*add_statement 21|295s13
+23V13*make{13P9} 21|189s23
+25V13*make{13P9} 21|250s23
+27V13*make{13P9} 21|205s23
+29V13*make{13P9} 21|220s23
+31V13*make{13P9} 21|262s23
+X 24 system.ads
+67M9*Address
+X 32 s-memory.ads
+53V13*Alloc{24|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{24|67M9} 105i<c,__gnat_realloc>22
+X 39 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 49 tokens.ads
+1K9*tokens 21|3w6 3r18 49|51e11
+7R9*token 21|31r12 36r31 49|42e14
+11E9*token_type 21|36r45 50r21 59r21 66r14 75r21 76r27 78r24 79r27 81r24
+. 82r27 84r24 85r27 87r24 88r27 90r24 91r27 93r24 94r27 108r18 108r54 109r17
+. 109r53 110r17 110r53 111r17 114r17 117r21 133r14 138r18 139r24 142r17 143r24
+. 146r17 147r24 150r17 151r24 154r17 155r24 158r17 159r24 176r17 183r27 185r27
+. 188r27 197r27 201r27 204r27 215r27 219r27 229r27 242r27 245r27 249r27 260r27
+. 270r21 272r24 274r24 276r24 278r24 291r38 291r96 292r34 292r91 293r34 307r18
+. 310r18 312r18 315r18 317r18 49|15e96
+20V13*get_token_type{11E9} 21|38s13 74s19 107s16 137s16 269s19 291s16 291s74
+. 292s12 292s69 293s12
+22V13*get_lexeme{5R9} 21|51s41 60s32
+30V13*to_string{string} 21|51s31 60s22
+

@@ -1,0 +1,61 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.14.0
+A -fPIC
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U boolean_expressions%b	boolean_expressions.adb	87953cc9 NE OO PK IL
+Z interfaces%s		interfac.ads		interfac.ali
+W memory%s		memory.adb		memory.ali
+
+U boolean_expressions%s	boolean_expressions.ads	88de64a9 EE NE OO PK IL
+W arithmetic_expressions%s  arithmetic_expressions.adb  arithmetic_expressions.ali
+
+D ada.ads		20180524051735 76789da1 ada%s
+D a-unccon.ads		20180524051736 0e9b276f ada.unchecked_conversion%s
+D arithmetic_expressions.ads  20181108203938 e9469ebe arithmetic_expressions%s
+D boolean_expressions.ads  20181108203938 6198fa17 boolean_expressions%s
+D boolean_expressions.adb  20181130032618 1ca0ee2d boolean_expressions%b
+D ids.ads		20181108203938 8954e40a ids%s
+D interfac.ads		20180524051734 5ab55268 interfaces%s
+D memory.ads		20181108203938 faad28f3 memory%s
+D system.ads		20180524051735 085b6ffb system%s
+D s-exctab.ads		20180524051736 54135002 system.exception_table%s
+D s-stalib.ads		20180524051736 09bd3940 system.standard_library%s
+D tokens.ads		20181202015630 668c34b8 tokens%s
+X 3 arithmetic_expressions.ads
+4K9*arithmetic_expressions 38e27 4|1w6 1r34
+10P9*arithmetic_expression_access(8R9) 4|9r64 17r14 18r15 5|12r67
+21V13*evaluate{integer} 5|32s26 32s54 34s26 34s55 36s26 36s54 38s26 38s55
+. 40s26 40s54 42s23 42s52
+X 4 boolean_expressions.ads
+3K9*boolean_expressions 15E9 21l5 21e24 5|6b14 46l5 46t24
+5R9*boolean_expression 10r26 12r32 15c9 19e14 5|13r26 14r13 26r35
+7E9*relational_operator 7e74 9r26 16r11 5|12r29
+7n33*EQ_OP{7E9} 16r34 5|31r18
+7n40*NE_OP{7E9} 5|33r18
+7n47*LT_OP{7E9} 5|35r18
+7n54*LE_OP{7E9} 5|37r18
+7n61*GT_OP{7E9} 5|39r18
+7n68*GE_OP{7E9} 5|41r15
+9V13*make{5R9} 9>19 9>47 9>54 5|12b16 20l11 20t15
+9e19 op{7E9} 5|12b22 15r20
+9p47 expr1{3|10P9} 5|12b50 16r20
+9p54 expr2{3|10P9} 5|12b57 17r20
+12V13*evaluate{boolean} 12>23 5|26b16 45l8 45t16
+12r23 this{5R9} 5|26b26 30r15 32r36 32r64 34r36 34r65 36r36 36r64 38r36 38r65
+. 40r36 40r64 42r33 42r62
+16e7*op{7E9} 5|15m10 30r20
+17p7*first{3|10P9} 5|16m10 32r41 34r41 36r41 38r41 40r41 42r38
+18p7*second{3|10P9} 5|17m10 32r69 34r70 36r69 38r70 40r69 42r67
+X 5 boolean_expressions.adb
+14r7 expr{4|5R9} 19r14
+28b10 result{boolean} 32m16 34m16 36m16 38m16 40m16 42m13 44r14
+X 8 memory.ads
+3K9*memory 5|3w6 3r18 8|9e11
+

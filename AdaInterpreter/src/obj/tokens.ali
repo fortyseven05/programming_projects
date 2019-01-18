@@ -1,0 +1,133 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.14.0
+A -fPIC
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U tokens%b		tokens.adb		84211c4d NE OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.val_char%s	s-valcha.adb		s-valcha.ali
+
+U tokens%s		tokens.ads		668c34b8 EE OO PK IL
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20180524051735 76789da1 ada%s
+D a-except.ads		20180524051735 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051734 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051735 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051736 491b781d ada.tags%s
+D a-textio.ads		20180524051736 881db35a ada.text_io%s
+D a-unccon.ads		20180524051736 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051734 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051734 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051735 085b6ffb system%s
+D s-crtl.ads		20180524051734 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051736 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051736 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051736 48ec542b system.parameters%s
+D s-secsta.ads		20180524051736 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051735 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051736 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051736 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051736 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051734 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051735 34867c83 system.unsigned_types%s
+D s-valcha.ads		20180524051734 77a482a2 system.val_char%s
+D s-wchcon.ads		20180524051736 1b7d22d2 system.wch_con%s
+D tokens.ads		20181202015630 668c34b8 tokens%s
+D tokens.adb		20181202073356 6ab09baf tokens%b
+X 1 ada.ads
+16K9*Ada 20e8 25|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 25|1w10 1r27
+X 24 tokens.ads
+1K9*tokens 37E9 51l5 51e11 25|3b14 79l5 79t11
+3X4*invalid_identifier
+5R9*lexeme 9r32 17r44 22r47 28r34 30r30 32r24 34r40 39r10 46c9 49e14 25|6r32
+. 16r44 32r47 47r34 52r30 59r24 69r40 70r12
+7R9*token 18r26 20r37 22r33 24r34 26r34 37c9 42e14 25|17r26 18r12 27r37 32r33
+. 37r34 42r34
+9V13*is_valid_id{boolean} 9>26 25|6b13 14l8 14t19
+9r26 l{5R9} 25|6b26 9r31
+11E9*token_type 15e96 17r26 20r51 38r11 25|16r26 27r51
+11n24*FUNCTION_TOK{11E9}
+11n38*LEFT_PAREN_TOK{11E9}
+11n54*RIGHT_PAREN_TOK{11E9}
+11n71*IF_TOK{11E9}
+12n24*ITER_TOK{11E9}
+12n34*END_TOK{11E9}
+12n43*ELSE_TOK{11E9}
+12n53*WHILE_TOK{11E9}
+12n64*FOR_TOK{11E9}
+12n73*ID_TOK{11E9}
+13n24*PRINT_TOK{11E9}
+13n35*GE_TOK{11E9}
+13n43*GT_TOK{11E9}
+13n51*COLON_TOK{11E9}
+13n62*LE_TOK{11E9}
+13n70*LT_TOK{11E9}
+14n24*EQ_TOK{11E9}
+14n32*NE_TOK{11E9}
+14n40*ADD_TOK{11E9}
+14n49*SUB_TOK{11E9}
+14n58*MUL_TOK{11E9}
+14n67*DIV_TOK{11E9}
+15n24*EXP_TOK{11E9}
+15n33*MOD_TOK{11E9}
+15n42*REV_DIV_TOK{11E9}
+15n55*ASSIGN_TOK{11E9}
+15n67*EOS_TOK{11E9} 38r25
+15n76*LITERAL_INTEGER_TOK{11E9}
+17V13*make{7R9} 17>19 17>38 17>52 17>61 25|16b13 25l8 25t12
+17e19 tt{11E9} 25|16b19 23r17
+17r38 l{5R9} 25|16b38 22r16
+17i52 row_num{positive} 25|16b52 20r22
+17i61 col_num{positive} 25|16b61 21r22
+20V13*get_token_type{11E9} 20>29 25|27b13 30l8 30t22
+20r29 tok{7R9} 25|27b29 29r14
+22V13*get_lexeme{5R9} 22>25 25|32b13 35l8 35t18
+22r25 tok{7R9} 25|32b25 34r14
+24V13*get_row_num{positive} 24>26 25|37b13 40l8 40t19
+24r26 tok{7R9} 25|37b26 39r14
+26V13*get_col_num{positive} 26>26 25|42b13 45l8 45t19
+26r26 tok{7R9} 25|42b26 44r14
+28V13*lexeme_length{positive} 28>28 25|47b13 50l8 50t21
+28r28 l{5R9} 25|47b28 49r14
+30V13*to_string{string} 30>24 25|52b13 57l8 57t17
+30r24 l{5R9} 25|52b24 56r14
+32V14*"="{boolean} 32>18 32>32 25|59b14 67l9 67t11
+32r18 l{5R9} 25|59b18 61r14
+32a32 s{string} 25|59b32 61r10
+34V13*make{5R9} 34>19 25|69b13 75l8 75t12
+34a19 s{string} 25|69b19 72r21 72r34 73r19
+38e7*tt{11E9} 25|23m11 29r18
+39r7*l{5R9} 25|22m11 34r18
+40i7*row_num{positive} 25|20m11 39r18
+41i7*col_num{positive} 25|21m11 44r18
+44i4 LEXEME_STRING_SIZE{natural} 47r25
+47a7*str{string} 25|9r33 49r16 56r16 61r16 72m11
+48i7*size{positive} 25|73m11
+X 25 tokens.adb
+7e7 test{character} 9m7
+18r7 tok{24|7R9} 20m7 21m7 22m7 23m7 24r14
+70r7 lex{24|5R9} 72m7 73m7 74r14
+

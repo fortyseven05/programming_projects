@@ -1,0 +1,43 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.14.0
+A -fPIC
+P ZX
+
+RN
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U ids%b			ids.adb			60a0c945 NE OO PK IL
+W tokens%s		tokens.adb		tokens.ali
+
+U ids%s			ids.ads			efd8d0b2 EE NE OO PK IL
+W tokens%s		tokens.adb		tokens.ali
+
+D ada.ads		20180524051735 76789da1 ada%s
+D a-unccon.ads		20180524051736 0e9b276f ada.unchecked_conversion%s
+D ids.ads		20181108203938 8954e40a ids%s
+D ids.adb		20181130050808 8f7819f7 ids%b
+D system.ads		20180524051735 085b6ffb system%s
+D s-exctab.ads		20180524051736 54135002 system.exception_table%s
+D s-stalib.ads		20180524051736 09bd3940 system.standard_library%s
+D tokens.ads		20181202015630 668c34b8 tokens%s
+X 3 ids.ads
+3K9*ids 12E9 16l5 16e8 4|3b14 20l5 20t8
+5R9*id 7r40 9r34 12c9 14e14 4|5r40 6r10 14r34
+7V13*make{5R9} 7>19 4|5b13 12l8 12t12
+7a19 s{string} 4|5b19 9r18
+9V13*get_lexeme{8|5R9} 9>25 4|14b13 17l8 17t18
+9r25 this{5R9} 4|14b25 16r14
+13r7*l{8|5R9} 4|10m9 16r19
+X 4 ids.adb
+6r7 i{3|5R9} 10m7 11r14
+7r7 lex{8|5R9} 9m7 10r14
+X 8 tokens.ads
+1K9*tokens 3|1w6 1r18 4|1w6 1r18 8|51e11
+5R9*lexeme 3|9r45 13r10 4|7r12 14r45 8|49e14
+34V13*make{5R9} 4|9s13
+

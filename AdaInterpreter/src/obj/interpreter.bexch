@@ -1,0 +1,27 @@
+[GENERATED OBJECT FILE]
+b__interpreter.o
+[PROJECT FILES]
+/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/ada_interpreter.gpr
+20181202072209
+[BOUND OBJECT FILES]
+/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/obj/tokens.o
+/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/obj/ids.o
+/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/obj/lexical_analyzers.o
+/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/obj/memory.o
+/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/obj/arithmetic_expressions.o
+/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/obj/boolean_expressions.o
+/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/obj/iters.o
+/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/obj/statements.o
+/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/obj/programs.o
+/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/obj/parsers.o
+/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/obj/interpreter.o
+[GENERATED SOURCE FILES]
+b__interpreter.ads
+b__interpreter.adb
+b__interpreter.ali
+[RESULTING OPTIONS]
+-L/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/obj/
+-L/Users/fortyseven05/Documents/2018_Fall/CPL/Coding Projects/AdaInterpreter/src/obj/
+-L/users/fortyseven05/opt/gnat/2018/lib/gcc/x86_64-apple-darwin16.7.0/7.3.1/adalib/
+-static
+/users/fortyseven05/opt/gnat/2018/lib/gcc/x86_64-apple-darwin16.7.0/7.3.1/adalib/libgnat.a
